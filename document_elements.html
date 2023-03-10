@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <!-- icon css-->
+    <link rel="stylesheet" href="assets/elagent-icon/style.css">
+    <link rel="stylesheet" href="assets/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css">
+    <link rel="stylesheet" href="assets/prism/prism.css">
+    <link rel="stylesheet" href="assets/animation/animate.css">
+    <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <title>Docy</title>
+   
+</head>
+
+<body class="doc wide-container" data-spy="scroll" data-target="#navbar-example3" data-scroll-animation="true" >
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text" >
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <h4>HABIB IT Solutions</h4>
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+    <div class="body_wrapper" header>
+        <nav class="navbar navbar-expand-lg menu_one dark_menu display_none sticky-nav" id="wat">
+            <div class="container custom_container" style="position: relative;left:0;top:0;" >
+
+            
+                <a class="navbar-brand header_logo" href="index.html">
+                <img class="first_logo sticky_logo main_logo" id="fish"id="log"src="data:image/jpeg;base64,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" srcset="img/logo-2x.png 2x" alt="logo">
+                    <img class="white_logo" id="log"src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIREhISEhIREhISDhMQEhESDhIREhASFxMbGxgTFxcbJDokGx0pHhoXJTkmKS8yMzM1GiI7PjkyPSwyMzABCwsLEA4QGxISHTIgICAwMjAwMjIyMDIyMjIyMjIyMDIyMjIyMjIyMjIwMjIyMjIyMj4yMjIyMjIyMjIyPTI9Mv/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAEDBQYHAgj/xABFEAACAQIDBAMLCAkEAwAAAAABAgADEQQFIQYSMUFRcZEHEyIyYXOBkqGxwRc0UlRystHSFCMzNUJiY4KiFiTh8BVD8f/EABoBAAIDAQEAAAAAAAAAAAAAAAADAgQFAQb/xAAyEQACAQMDAgMFBwUAAAAAAAAAAQIDBBESITEFEyJBYTJRcaGxFSOBkdHh8BQzQlLB/9oADAMBAAIRAxEAPwDs0REAEREAEREAEREAEREALbEAEnkLmaxlueb2LqIx/VuxROOhW+vpuJI2mzLcU0lPhMBvHoF/jYiadYqQRxUgj0GZN3e6KijH/Hn9DMu7pxnFR8uTqcTHZLi+/UUbmAFbrHGZGacJqUVJeZoxkpJNeZWIiTJCIiACIiACIiACIiACIiACIiACIiACIiACIiAFJAzTMBRU8C58VZexmKWktzx5DmZqWLqtUYsx15DXTyTK6h1BUFoj7T+QitV0LC5INYszFmNyTcmR2STGSWnSecU8vcyJxMrslid12png4BXyEXv75uE53g3KVUYcqgv1E6zoSNcA9IE9J0urrpuP+po2MswcX5HuInhXBvblNPJdPcRE6AiIgAiIgAiIgAiIgAiIgAiIgAiIgAkfE4laYuePIczK164QeXkJhsQxc3Mx+p9UjbLRDef0B8ETFVWdt5vQOQkVkkx0lh1nkXUcpOUnlv5lScSKySwyyWyyy6xsJFaUSKw59GvZN8y9t6lTP8g900aoOPVNyy82w6fYm/0efin8BlptJkivWtoOPulnCmzdYngz1S8Ydc1VUcpplvLyZCIiXRoiIgAiIgAiIgAiIgAiIgAiIgAlmrU3euXGMjOJSu60oRxHk6iHVuTcywyyVUlh54a7hiTfmSwRWEssJJYSw4iYsrzRHYSOwklpYqR8SrJEcrcgdJt2mblSXdpIv8oE1rLMP3yqo5KQx9B0m0VzwHRPRdLhppTqe/ZE7eOE2WDPeHW7dWs8yVRp7o8s1KMXKRYissvRES+MEREAEREAEREAEREAERKGACeC8j1cRfQcJb75Mit1SClpgyWCSzyy7S2akttUmZcX6kGA5lhzPTPLLNMCtU7jOtnhzLLGemaWWaQiivJltjLDy65mRyrAXIqOLKNVGmvlMv2ttKvNQiVsa3hEzKcN3qnvHxnAP4D2yQAWMu7hbU6DlL6qBwnsKdslFQW0YluMcLCLdKlbU8ZdltnI4KT6RLDY0L4ysPRf3Sz4YLB3UlyS4kNcxpHQP2qw94klagPAg9UkpJ8M6pJ8MuRESR0REQAREQAREQApIGPxNvBHHnJOKrBFLGa8apJuTqdTMHrV66UO1B7y5+H7kXJIlh5XfkQVJ6ViSANSZ5GMZZwtzvcJO/KObcePRKVGFIW4uR6simp5Y6pS7e0t5fT9wdTBeZ5aZ5bZ5bZ4pRFSqHtmll2i5Y2AJPQLzM5flYHhPqeS8hL1nZVLiWIrb3ilmZHy7LS5DuLLxC6a+UzO7g4chwHKe4nsrW0p20NMfxZZjBRWCsREtkhKSsQAj18Mj+Oqt1gGQKuR0+NNnpH+mwUe6ZaJBwi+UQlTjLlGu1Bj8P4m5iUHI2Wp6zNaVwe1VFm73WDUKl7brqxBP2gLTYZj8zymjiVK1UVtNGKgsvUTwkXCUfZf5i3Ccd4P8GTKdRXF1IIPAg3EuznmNy7G5a2/haj1KINzSckqBfgBew7OiZrZ/a+jiT3t/wBTWFgUcmzHh4JIAPo6YQqpvD2ZyFdN6ZbM2mJQSsaWBERADAZ7iPCCDkAxmMFSecxr71Vz5bDsEjipPD30u7XlL1M+dXMmTEYsQBqToJlCow9O5sXYaeT/ALeUyTCWXvrDldb8hbjMZmWL75UY30UlR6OcswoK1od6Xty9n09RurRHL5YNW5ueJ1M8mpI/fJ5LzL0N7sT3SQXnrD0XqtuoL9J5CVy/BNWbTRBxaxtx4Dpm04bDJTUKoA95mrYdLlX8U9o/NjaUHPd8FjBZetIci30iJOnluB6jPnDOtp8cuIrAYqqAKxAAYgDTgJ6iFOFGKjBYRaeIrY+kbxPmH/VWP+tVfXP4zq3cgzOviKWINao1Qq6hd4k28aMUkzink6TERJExEpIGdVCmHqspswpkgjiIAT4nzCdqsf8AW6vE/wAZ6Y/1Vj/rdX12/GQ7iF9xH09KzT+5ljKlfL0qVXZ3LkFmJJ8RdPfNvk0MR4dAwIYAgixBFwZz7a/ZgKe/UwVFywZAQ1JuTXHLs4ToktV6KurIwurAqR5CLRVakqi9fIRXoKrHHn5M55svtg9FlwuNNwbLTxDNoddA3bxvynRkcMAQQQRcEG4M5TtJkwR2pMNLlqbWItp8LybsJtM1N/0LFNw0pVGYa3a+5rx8b2RFvcOWYS5RUtbp57dTlHTIlBEuGkc7qVLsT5fhJOWUTVqInK926rXHtEx2IO67Doa3smy7IUbh6nl3B2X+M8pb23crKL9+5iUPHUUTL5rVFKg1tNAo9JAmmb82Ha+ru00X6TH2ETU9+P6p4q2nyih15V+80+4lb8lZbhWr1Ao8UasegX4dcxffJvOQYQU6Sk+M43ies3HvibK0VapiXC5IW0e7PHkjIYegtNQqiwEuxE9QkksLg2EeX4HqM+Wc8+dV/PH4T6mfgeoz5Zzz51X88fhI1OBdTggTsncQ/Y4n7a+9pxubrsJtsmWU6iNSd++MGuoBta+mrDpkYvcXB4Z9BxOUfLFS+rVfVX88fLFS+rVfVX88ZqQ7Ujq0x+ffNq3mzOc/LFS+rVfVX88jZh3WadWk9P8ARqoLpu3Krz6mhqQOSOTH4n3ysp/3tMrECD6B7kv7sp+cP3Em7zSO5L+7KfnD9xJu8sIsR4ERE6dNW21wm9SWoBqjWP2SNfdOaZ5hiVFVNHQ3uL3sBx652PPKQbD1R/TYjrsZzBqe8Cp4HQzIvPu6ymvMwuoR7dZTXmb3sTnv6bhVZj+sTwKg049NhytaVnPu55jzhscaJPg1VK20tvkg37BE1ITysmrQq6oJszu0dPveJccm8Me6bZsolsMp+kd7tAmG29wtu91hy8BvION+0zM7JPvYSkehbe6UaFLRcSKdvTcLqS/m5jdt3t3rrb3TVN+bHt+SDRPLwh7Jp3fpSvIZrNlG+z3pGTwnh1Ka/SqqPQTOn0EsoHQAPZOUZVW/3FHz6D/ITrS8B1S306GlSLvS/Zk2eoiJpmqeG4HqM+Wc8+dV/PH4T6mbgeoz5Zzz51X88fhF1OBdTggRE6b3KdnMJjaddsRSWoUcBSeVydBFxWRaWXg5lE+jvk+yv6qnZHyfZX9VTsk+2yfbZ84xPo75Pss+qp2SDnGwuWpQquuGQMtMkHotznNDOOmz5/iPx+MSBDzPoHuS/uyn5w/cSbvNI7kv7sp+cP3Em7ywuCxHgRETp0iZl+xqebPunNe9+8++dFzmpu0KnlQjtmiGnMLqtRKcV6GV1COqS+BpOOqGhjBUGhVg3+MrLW0Lb2KcDyD2CJdo704/BCINpYO75tglxFF6R/iHHTQg3mD2DdhQek+j0q7Iw6LKv4zaZi6WB73iWqIPBqrZxw8MEnf6+Alxx8Ska0oeNT/Aw3dCw5bDLUA/Zvr/AHMonNe/Ttea4QV6NSkdd9CB18R7bThOLRqNR6T6MlQof7Wtfq0lW5pZlqM6/peNS95PoYrcdH+jUVufJrztOXVxUpI4N95AfZOA9+nTe53ngqU+8MfCTxbnUgsen0Tlu9Et/M5Yz7c9L4ZvkREvmweH4HqPunyznnzqv54/CfU7cD1TiGZ9zDH1K1R13N16hYapwPW0hNZITWTnE7J3EP2OJ+2vvaaz8lOY/wAnrJ+edB7m2zFfLqdZa+7eo4Zd0ryv0E9MjGLyQhFpm8xERo4pMdn/AM2rebMyMh5pQapRqIvjOhUcOMAPlQ/E++Jv3yU5j/J6yfnlPkpzH+n6yfmiNLEaWdE7kv7sp+cP3Fm7TWthMmq4HBrQq231Yk2ta26o5E8wZsschy4ERLdaoEUseAF+yck1FZfB0w20lbwVQczc9Q/+zWcQwRGdtAo3j6JlsWxqOznmdOqaZtvmIRBh0PhMbvY8FsdDbrE8jUqO9usR4/4jOr7tyZr+RYY4vG01479W7fZAtfX0RNu7lOUEvUxbjwQDTp3HO6neHYYnqoU9idC3UoZaOpxERxeKGc17pezrH/d0lvYEVVC+UWfTrYzpUt1qSurIwDKwKsCLgg8pGUdQupTU44Z82bxk3KsxfD1FdSRYi9iRzmybb7HvhXatRUvQcsxCoT3rW+tv4dT6s0yV5QzszHnTcHhnetnNoExSKCyipbhvDwtbaTPz54yjNnw7Cxbd8hN114gzqWQ7Yq6gVSCLftFIPrAcJyFfR4an5luheJeGp+ZusSxh8SlQbyMrDpVgw9kkS2nng0MiIiB0REQAREQAREQApESHicfTp8WBP0QdeyLq1IU46pvCONpckp3Ci50AmEx2JNQ2Hij/AClmvjGqHXReSiYLPNoqOEUi6vVsd2mrC4NuLdHKeYvuo1LuXYt1s/n+wuVRY34LufZtTwlMuxBci1NLi7G3E+S85vgcHWzHE7o3meobu+rd7S4Fz7JSpUxOY4iwDu7myqAStMEgXNuA4azr+yGzKYCkL2as4/WVLa8b7o6Ba3ZNPp3T1bx33k+f0KaTrz29lGYyrAJhqS0qYAVBbgBfW5PtiTYmwaK2WEViIgAiIgBZq0VdSrgMrAggi4IPKcx2u2AZS1bCDeU3ZqPhEjS/g8b89J1OJFxTF1KUaiwz5oqU2RirAqw0KkEEdvCXcNi3pm6MR5NCD6J3LP8AZPC40Eum5U5VFJBGluANj/xOaZ3sDi8PdqYFZOW5vFwLcxa0TOG2HujNq2so+qPOVbTlCPDam3WCh9Bm6Zftk9hvqtQfSRhfh0ATkDqVJVgVYcQeMuUsQ6G6sR7ZW7Mob05Y+hVjrp/25Y+h3jC7T4Z+Lbh/nsJkqePov4tRG6mBnBqGe1F8YBx6AfZJ1HaCnzFRT5D/AMzvfrx5jksK+rR9qKZ3MMDzHbPU4vSz9OVV162H4yUufHliPasP61rmDJ/afvgzr08NVUcSB1zkv/myeOI/yHwnhs6pfxVr/wB8i79+UGdXUs8Q+Z1OrmdFONROq4kGrtFTHiqWPs7ZzVtocOv8Tt1bp95kattaB+zpnraw9xiJ3V3U2hHH89Qd7N8LB0Gvm9WpoDujoGsxWMzalRBNSooP0d4Fz5NZz/F7RYl9N/cXoVV6ekiW8uyjFYxv1aO9zq5vuC/MnkJV+zqtZ5rzyR7spPbdmazfbKo4KUAUXUFzbeI6bHhzmNyXIcVmFS6BipYb9Zw26LnWx5njN42f7myJuvi2FRhZhTRmCA8SCdD0dk3/AAuFSkoVFVVAAAAmtb2dOisRWPqPhbznvNmH2a2Zo4GmAihqhHh1CNSb8r8Jn5WJcSwXoxUVhCIidOiIiACIiACIiACUtEQAxuZZHhsSLVqSv5dQfZNPzHuZUWuaFR6Z+ixG722JiJFxTFypQlyjW8b3OManiGlUHLdZr/dAmFxOy+Np+Ph36xa0RFuKKtS2guDG1cHUTxqbDrtLJU9BiIsotHpKLHgpMmUMnxL+JRqN1W/GUidR2MUzL4XYbMKn/qCA83J+Ez+B7l9Q2NasgHMUyb/5LKxGxgjRp2tPG5tWWbCYKhY97NRhwZ2N+HQNJs1KkqABQFAFgAIiMSwWIwjHhF2IiBIREQAREQA//9k=" srcset="img/logo-w2x.png 2x" alt="logo">
+                </a><a href="habibitsolutions" style="color:white;font-size:25px;font-weight: 500;margin-left: 10px;margin-top: 5px;;" id="gel">Habib IT Solutions</a>
+                
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu_toggle">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="hamburger-cross">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav menu ml-auto">
+                        <li class="nav-item dropdown submenu">
+                            <a href="index.html" class="nav-link dropdown-toggle" id="row" >Home</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Creative Helpdesk</a></li>
+                                <li class="nav-item"><a href="index-multi.html" class="nav-link">Multi Helpdesk</a></li>
+                                <li class="nav-item"><a href="index-classic.html" class="nav-link">Classic Helpdesk</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu mega_menu tab-demo active">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="rew">chapter 3</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-6.8 tabHeader">
+                                            
+                                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <li class="nav-item">
+                                                    <img src="C:\Users\user1.LENOVO1\Desktop\Docy_HTML_Template\undraw_Designer_girl_re_h54c.png" style="height:50px;width:50px;">
+                                                    <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Web Development</a>
+                                                </li>
+                                                <li class="nav-item active">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjCpcnH_KLSKlg7NbwW-ZAseZ18KeWzLQTg&usqp=CAU" style="height:50px;width:50px;">
+                                                    <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">HTML</a>
+                                                </li>
+
+                                               
+                                                <li class="nav-item">
+                                                    <img src="data:image/png;base64,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"style="height:35px;width:40px;">
+                                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">CSS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <img src="data:image/png;base64,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" style="height:35px;width:40px;">
+                                                    <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Javascript</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <img src="data:image/png;base64,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"style="height:50px;width:50px;">
+                                                    <a class="nav-link" id="v-pills-content-tab" data-toggle="pill" href="#v-pills-content" role="tab" aria-controls="v-pills-content" aria-selected="false">mongodb</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-pages-tab" data-toggle="pill" href="#v-pills-pages" role="tab" aria-controls="v-pills-pages" aria-selected="false">Other Pages</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="tab-content tabContent" id="v-pills-tabContent">
+                                                <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li> <a href="doc-main.html"> Doc Topics </a> </li>
+                                                            <li> <a href="archive-doc-single.html"> Single Product </a> </li>
+                                                            <li> <a href="archive-doc-multi.html"> Multi Products </a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="doc-main.html">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="doc-main.html">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade active show" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                          <li>
+                                                           
+                                                            <a class="active" href="intro_html.html">Introduction to HTML</a></li>
+                                                           
+                                                            <li><a href="document_basic.html">HTML Structure and Document Types</a></li>
+                                            <li><a href="document_elements.html">Elements and Attributes</a></li>
+                                            <li><a href="document_text.html">Text and Headings</a></li>
+                                            <li><a href="document_list.html">Lists and Links</a></li>
+                                            <li><a href="document_image.html">Images and Media
+                                            </a></li>
+                                            <li><a href="documenttables.html">Tables</a></li>
+                                            <li><a href="doc-content-tables.html">Forms and Input Elements</a></li>
+                                            <li><a href="doc-content-tables.html">Semantic HTML</a></li>
+                                            <li><a href="doc-content-tables.html">CSS and HTML Layout</a></li>
+                                            <li><a href="doc-content-tables.html">HTML5 Structural Elements</a></li>
+                                            <li><a href="doc-content-tables.html">HTML5 Forms and Input TypesHTML5 Forms and Input Types</a></li>
+                                            <li><a href="doc-content-tables.html">HTML5 Media and APIs (Canvas, Video, Audio, etc.)
+                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text" >
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="doc-main.html">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list" >
+                                                            <li><a href="doc-element-hotspots.html">Left Sidebar</a></li>
+                                                            <li><a href="doc-content-video.html">Full-width</a></li>
+                                                            <li><a href="doc-layout-banner-gradient.html">Gradient Banner</a></li>
+                                                            <li><a href="doc-layout-banner-empty.html">Without Banner</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="#">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list w_100">
+                                                            <li><a href="doc-ref-cheatsheet.html">Cheatsheet</a></li>
+                                                            <li><a href="doc-ref-footnote.html">Footnotes</a></li>
+                                                            <li><a href="doc-tour.html">Interface Tour</a></li>
+                                                            <li><a href="doc-ref-can-use.html">Can I Use</a></li>
+                                                            <li><a href="doc-content-tooltip.html">Tooltips & Direction</a></li>
+                                                            <li><a href="doc-ref-shortcuts.html">Keyboard Shortcuts</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="#">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-content" role="tabpanel" aria-labelledby="v-pills-content-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li><a href="doc-content-image.html">Image</a></li>
+                                                            <li><a class="active" href="doc-content-tables.html">Tables</a></li>
+                                                            <li><a href="doc-content-video.html">Video</a></li>
+                                                            <li><a href="typography.html">Typography</a></li>
+                                                            <li><a href="doc-content-tooltip.html">Tooltips & Direction</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="#">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-pages" role="tabpanel" aria-labelledby="v-pills-pages-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li> <a href="onepage.html">Onepage</a> </li>
+                                                            <li> <a href="doc-main.html">Doc Topics</a></li>
+                                                            <li> <a href="doc-tour.html">Cheatsheet</a> </li>
+                                                            <li> <a href="doc-changelog.html">Changelog</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="doc-main.html">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu" >
+                            
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="onepage.html" class="nav-link">Onepage Doc</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                               
+                                <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                                <li class="nav-item"><a href="404-error.html" class="nav-link">404 Error</a></li>
+                            </ul>
+                        </li>
+                       
+                            </ul>
+                        </li>
+                        
+                            </ul>
+                        
+                    </ul>
+                    <div class="right-nav">
+                     
+                        <a class="px-2 ml-3" href="#" title="Subscribe to the newsletter" id="row">
+                            <ion-icon name="mail" id="row"></ion-icon>
+                        </a>
+                        <a class="px-2" href="#" title="RSS feed">
+                            <ion-icon name="logo-rss"id="row"></ion-icon>
+                        </a>
+                        <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                            <label for="something" class="tab-btn tab-btns">
+                                <ion-icon class="light-mode" name="contrast" id="row"></ion-icon>
+                            </label>
+                            <input type="checkbox" name="something" id="something" id="row" class="dark_mode_switcher">
+                            <label for="something" class="tab-btn">
+                                <ion-icon class="dark-mode" name="contrast-outline"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_main_menu dark_menu sticky-nav ">
+            <div class="container">
+                <div class="mobile_menu_left">
+                    <button type="button" class="navbar-toggler mobile_menu_btn">
+                    <span class="menu_toggle ">
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                    </button>
+                    <a class="navbar-brand header_logo" href="index.html">
+                        <img class="sticky_logo main_logo" src="img/logo.png" srcset="img/logo-2x.png 2x" alt="logo">
+                        <img class="white_logo" src="img/logo-w.png" srcset="img/logo-w2x.png 2x" alt="logo">
+                    </a>
+                </div>
+                <div class="mobile_menu_right">
+                    <div class="right-nav" id="row">
+                        
+                        <a class="px-2 ml-3" href="#" title="Subscribe to the newsletter">
+                            <ion-icon name="mail"></ion-icon>
+                        </a>
+                        <a class="px-2" href="#" title="RSS feed">
+                            <ion-icon name="logo-rss"></ion-icon>
+                        </a>
+                        <div class="px-2 js-darkmode-btn btn" title="Toggle dark mode">
+                            <label for="something2" class="tab-btn tab-btns">
+                                <ion-icon class="light-mode" name="contrast"></ion-icon>
+                            </label>
+                            <input type="checkbox" name="something2" id="something2" class="dark_mode_switcher">
+                            <label for="something2" class="tab-btn">
+                                <ion-icon class="dark-mode" name="contrast-outline"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="click_capture"></div>
+        <div class="side_menu">
+            <div class="mobile_menu_header">
+                <div class="close_nav">
+                    <i class="arrow_left"></i>
+                    <i class="icon_close"></i>
+                </div>
+                <div class="mobile_logo">
+                    <a class="navbar-brand header_logo" href="index.html">
+                        <img class="sticky_logo main_logo" src="data:image/jpeg;base64,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" srcset="img/logo-2x.png 2x" alt="logo">
+                        <img class="white_logo" src="data:image/jpeg;base64,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" srcset="img/logo-w2x.png 2x" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="mobile_nav_wrapper"  >
+                <nav class="mobile_nav_top">
+                    <ul class="navbar-nav menu ml-auto">
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown submenu active">
+                            <a href="#" class="nav-link">Docs</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="doc-content-video.html" class="nav-link">Doc Archives</a></li>
+                                <li class="nav-item"><a href="doc-main.html" class="nav-link">DocTopics</a></li>
+                                <li class="nav-item dropdown submenu">
+                                    <a href="#" class="nav-link">Elements</a>
+                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="doc-element-tab.html" class="active nav-link">Tabs</a></li>
+                                        <li class="nav-item"><a href="doc-element-accordion.html" class="nav-link">Accordion</a></li>
+                                        <li class="nav-item active"><a href="doc-element-notice.html" class="nav-link">Notices</a></li>
+                                        <li class="nav-item"><a href="doc-content-tables.html" class="nav-link">Tables</a></li>
+                                        <li class="nav-item"><a href="doc-content-tooltip.html" class="nav-link">Tooltips & Direction</a></li>
+                                        <li class="nav-item"><a href="doc-element-hotspots.html" class="nav-link">Image Hotspots</a></li>
+                                        <li class="nav-item"><a href="doc-element-lightbox.html" class="nav-link">Lightbox</a></li>
+                                        <li class="nav-item"><a href="doc-changelog.html" class="nav-link">Changelog</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown submenu">
+                                    <a href="#" class="nav-link">Layouts</a>
+                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="doc-element-hotspots.html" class="nav-link">Left Sidebar</a></li>
+                                        <li class="nav-item"><a href="doc-content-video.html" class="nav-link">Full-width</a></li>
+                                        <li class="nav-item"><a href="doc-layout-banner-gradient.html" class="nav-link">Gradient Banner</a></li>
+                                        <li class="nav-item"><a href="doc-layout-banner-empty.html" class="nav-link">Without Banner</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                          
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="onepage.html" class="nav-link">Onepage Doc</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="onepage.html" class="nav-link">Onepage Doc</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                                <li class="nav-item"><a href="404-error.html" class="nav-link">404 Error</a></li>
+                            </ul>
+                        </li>
+                        
+                            </ul>
+                        </li>
+                        
+                </nav>
+                <div class="mobile_nav_bottom"  >
+                    <aside class="doc_left_sidebarlist">
+                        <h2>Docy Documentation</h2>
+                        <div class="scroll">
+                            <ul class="list-unstyled nav-sidebar">
+                                <li class="nav-item">
+                                    <a href="doc-main.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="doc-element-tab.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Elements</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a class="active" href="doc-element-tab.html">Tabs</a></li>
+                                        <li><a href="doc-element-accordion.html">Accordion</a></li>
+                                        <li><a href="doc-element-notice.html">Notices</a></li>
+                                        <li><a href="doc-content-tables.html">Table</a></li>
+                                        <li><a class="active" href="doc-element-lightbox.html">Image Lightbox</a></li>
+                                        <li><a href="doc-element-hotspots.html">Image Hotspots</a></li>
+                                        <li><a href="doc-element-code.html">Source Code</a></li>
+                                        <li><a href="doc-content-tooltip.html">Tooltip</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="doc-content-video.html" class="nav-link"><img src="img/side-nav/layout.png" alt="">Layouts</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a href="doc-content-video.html">Full-width</a></li>
+                                        <li><a href="doc-element-hotspots.html">Left Sidebar</a></li>
+                                        <li><a href="doc-layout-banner-gradient.html">Gradient Banner</a></li>
+                                        <li><a href="doc-layout-banner-empty.html">Without Banner</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="doc-ref-cheatsheet.html" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Reference</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a href="doc-ref-cheatsheet.html">Cheatsheet</a></li>
+                                        <li><a href="doc-ref-footnote.html">Footnotes</a></li>
+                                        <li><a href="doc-tour.html">Interface Tour</a></li>
+                                        <li><a href="doc-ref-can-use.html">Can I Use</a></li>
+                                        <li><a href="doc-content-tooltip.html">Tooltips & Direction</a></li>
+                                        <li><a href="doc-ref-shortcuts.html">Keyboard Shortcuts</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="doc-changelog.html" class="nav-link"><img src="img/side-nav/clock.png" alt="">Change Log</a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled nav-sidebar coding_nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/account.png" alt="">Account</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="onepage.html" class="nav-link"><img src="img/side-nav/layout.png" alt="">Onepage Doc</a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled nav-sidebar bottom_nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/united-states.png" alt="">United States</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="signup.html" class="nav-link"><img src="img/side-nav/edit.png" alt="">Signup</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="signin.html" class="nav-link"><img src="img/side-nav/users.png" alt="">Sign In <i class="arrow_right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <!--================Forum Breadcrumb Area =================-->
+        <section class="doc_banner_area search-banner-light" id="sat">
+            <div class="container" id="col">
+                <div class="doc_banner_content">
+                    <form action="#" class="header_search_form">
+                        <div class="header_search_form_info">
+                            <div class="form-group">
+                                <div class="input-wrapper" id="claw">
+                                <h1 style="font: size 30px;font-weight: 100px;color:white;"> <span>HTML</span> &nbsp;<span style="font-weight: 300;">Tutorial<br></span></h1>
+                                
+                                <br><span style="font: size 30px;font-weight: 100px;color:white;">HTML is the standard markup language for Web pages.
+
+                                    <br>With HTML you can create your own Website.
+                                    
+                                    <br> HTML is easy to learn - You will enjoy it!
+                                    </p>
+                                </span>
+                                    <div class="header_search_form_panel">
+                                        <ul class="list-unstyled">
+                                            <li>Help Desk
+                                                <ul class="list-unstyled search_item">
+                                                    <li><span>Configuration</span><a href="#">How to edit host and
+                                                            port?</a></li>
+                                                    <li><span>Configuration</span><a href="#">The dev Property</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>Support
+                                                <ul class="list-unstyled search_item">
+                                                    <li><span>Pages</span><a href="#">The asyncData Method</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>Documentation
+                                                <ul class="list-unstyled search_item">
+                                                    <li><span>Getting Started</span><a href="#">The asyncData Method</a>
+                                                    </li>
+                                                    <li><span>Getting Started</span><a href="#">The asyncData Method</a>
+                                                    </li>
+                                                    <li><span>Getting Started</span><a href="#">The asyncData Method</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="page_breadcrumb">
+            <div class="container custom_container" id="wet">
+                <div class="row">
+                    <div class="col-sm-7" id="wet">
+                        <nav aria-label="breadcrumb" id="wet">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" style="color:white;font-weight:400;">Home</a></li>
+                               
+                                <li class="breadcrumb-item active" aria-current="page"  style="color:white;font-weight:400";>HTML</li>
+
+                                <li class="breadcrumb-item active" aria-current="page" style="color:white;font-weight:400";>Elements & Attributes</li>
+                                <li class="breadcrumb-item" id="uppp"><a href="#" class="date"   style="color:white;font-weight:400";><i class="icon_clock_alt"  ></i>Updated on February 1, 2023</a>
+                            </ol>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+       
+        
+        <!--================End Forum Breadcrumb Area =================-->
+
+        <!--================Topic Area =================-->
+        <section class="doc_documentation_area" id="sticky_doc">
+            <div class="overlay_bg"></div>
+            <div class="container custom_container">
+                <div class="row">
+                    <div class="col-lg-3 doc_mobile_menu display_none">
+                        <aside class="doc_left_sidebarlist">
+                            <div class="open_icon" id="left">
+                                <i class="arrow_carrot-right"></i>
+                                <i class="arrow_carrot-left"></i>
+                            </div>
+                            <div class="scroll">
+                                <ul class="list-unstyled nav-sidebar">
+                                    <li class="nav-item">
+                                        <a href="doc-main.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="doc-main.html" class="nav-link"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT463ieWzeMzi7Zpo7phhQtwH9c0eg6_SMn3A&usqp=CAU" alt="briefcase" style="height:50px;width:100px;">HTML</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a  href="doc-element-tab.html">HTML</a></li>
+                                            <li><a href="intro_html.html">Introduction to HTML</a></li>
+                                            <li><a href="document_basic.html">HTML Structure and Document Types</a></li>
+                                            <li><a class="active" href="document_elements.html">Elements and Attributes</a></li>
+                                            <li><a href="document_text.html">Text and Headings</a></li>
+                                            <li><a href="documen
+                                                t_list.html">Lists and Links</a></li>
+                                            <li><a href="document_image.html">Images and Media
+                                            </a></li>
+                                            <li><a href="document_tables.html">Tables</a></li>
+                                            <li><a href="document_forms.html">Forms and Input Elements</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="css.html" class="nav-link"><img src="data:image/png;base64,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" style="height:25px;width:30px" alt="">CSS</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="doc-content-image.html">INTRODUCTION TO CSS</a></li>
+                                            <li><a href="doc-element-tab.html">Selector and properties</a></li>
+                                            <li><a href="doc-element-code.html">Box Model</a></li>
+                                            <li><a href="doc-content-video.html">Doisplay and Visibility</a></li>
+                                            <li><a href="doc-content-tooltip.html">Positioning and Floating</a></li>
+                                            <li><a href="typography.html"> Flexbox</a></li>
+                                            <li><a href="typography.html">Grid layout</a></li> 
+                                              <li>  <a href="typography.html">Text and Fonts</a></li>
+                                                <li><a href="typography.html">Background and borders</a></li>
+                                                <li><a href="typography.html">Transitions and Animations</a></li> 
+                                                <li><a href="typography.html">Transformations</a></li> 
+                                                <li><a href="typography.html">Media Queries</a></li>
+                                                 <li><a href="typography.html">CSS Variables</a></li> 
+                                                <li><a href="typography.html">SASS and Less</a></li>
+                                                 <li><a href="typography.html">Responsive web design</a></li> 
+                                                <li><a href="typography.html">CSS Framewroks</a></li> 
+                                                <li><a href="typography.html">Best Practice and tips</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                           <a href="javascript.html" class="nav-link"><img src="data:image/png;base64,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" style="height:25px;width:30px;"alt="">Javascript</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="doc-ref-cheatsheet.html">INTRODUCTION TO JAVASCRIPT</a></li>
+                                            <li><a href="doc-ref-footnote.html">Varaibles and Data types</a></li>
+                                            <li><a href="doc-tour.html">Operators and Expressions</a></li>
+                                            <li><a href="doc-ref-can-use.html">Control flow</a></li>
+                                            <li><a href="doc-content-tooltip.html">Functions</a></li>
+                                            <li><a href="doc-ref-shortcuts.html">Array & Objects</a></li>
+                                            <li><a href="doc-content-tooltip.html">Destructing and Spread Operators</a></li>
+                                            <li><a href="doc-content-tooltip.html">Class or Inheritance</a></li>
+                                            <li><a href="doc-content-tooltip.html">Javascript and the browser</a></li>
+                                            <li><a href="doc-content-tooltip.html">Document object model</a></li>
+                                            <li><a href="doc-content-tooltip.html">Form Validation</a></li>
+                                            <li><a href="doc-content-tooltip.html">Debugging & Error Handling</a></li>
+                                            <li><a href="doc-content-tooltip.html">Javascript modules</a></li>
+                                            <li><a href="doc-content-tooltip.html">Node.js</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                         <a href="python.html" class="nav-link"><img src="data:image/jpeg;base64,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" style="height:25px;width:30px;" alt="">python</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="doc-content-video.html">INTRODUCTION TO PYTHON</a></li>
+                                            <li><a href="doc-element-hotspots.html">python fundamentals</a></li>
+                                            <li><a href="doc-layout-banner-gradient.html">Control Flow</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Functions & Modules</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Lists & Tuples</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Dictionaries And Sets</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Object Oriented Programmim=ng</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Expection Handle</a></li>
+                                            <li><a href="doc-layout-banner-empty.html"> Regular Expressions</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Debugginng and Profiling</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Wreb Scraping and Web development</a></li>
+                                            <li><a href="doc-layout-banner-empty.html">Python and Databases</a></li>
+                                        </ul>
+                                   <hr style="font-weight:bolder ;color:black">
+                              
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-7 col-md-8 doc-middle-content">
+                        <div id="post" class="shortcode_info">
+                            <div class="shortcode_title">
+                                <a class="btn" href="#">HTML</a>
+                                   
+                                    <h4>Explain about the Tag , Elements and Attributes</h4>
+                                    <p >
+                                        HTML is a markup language that uses tags, elements, and attributes to describe the structure and layout of a document.
+                <ul><li id="lie" >Tags are the basic building blocks of an HTML document. They are used to define the structure and layout of the document, and are enclosed in angle brackets (&lt; &gt;). For example, the &lt;p&gt; tag is used to create a paragraph, and the &lt;img&gt; tag is used to insert an image.</li>
+                                       <li id="lie1" > Elements are the individual components of an HTML document, such as headings, paragraphs, and images. Elements are made up of a start tag, content, and an end tag. For example, the following code creates a paragraph element:
+                                     <li id="lie1" >  &lt;p&gt;This is a paragraph.&lt;/p&gt;</li>
+                                    <li id="lie1" > Attributes provide additional information about an element and are used to modify the default behavior of an element. They are added to the start tag of an element, and are made up of a name and a value. For example, the src attribute is used to specify the source of an image, and the href attribute is used to specify the link of an anchor element.</li>
+                                            <pre><code class="language-html" data-lang="html" id="stal">
+                                          &lt;img src="image.jpg" alt="An image"&gt;
+                                        </li>
+                                    
+                                        <button type="button" class="btn btn-primary">Try it</button></code></ul>
+                                        
+                                    </pre>
+                                      </p>
+                                        </div>
+                                        <div class="shortcode_title" >
+                                   
+                                            <h4>The &lt;html&gt; Element</h4>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsfI5bwVc7rZSvAFxee0f4rq9L5q9uBpCKQQ&usqp=CAU"style="height:250px;width:350px;">
+                                            <p >
+                                                The &lt;html&gt; element is the root element of an HTML document. It is used to define the beginning and the end of an HTML document. All other elements in an HTML document must be nested within the &lt;html&gt; element.
+                                                <br><br>The &lt;html&gt; element has two main parts: the head and the body.
+                                                <br><br> The &lt;head&gt; element contains information about the document, such as the title of the page, which is displayed in the browser's title bar or tab, and meta data.
+                                                <br><br>The &lt;body&gt; element contains the content of the document, such as headings, paragraphs, images, and links.
+                                                <br><br>Here is an example of a basic HTML document structure:
+                                                <div class="highlight">
+                                                  <pre>
+                                                   <code class="language-html" data-lang="html" id="stal">
+                                                                &lt;!DOCTYPE html&gt; 
+                                                                &lt;html&gt;
+                                                                &lt;head&gt;
+                                                                &lt;title&gt;My Webpage&lt;/title&gt; 
+                                                                &lt;/head&gt; 
+                                                                &lt;body&gt; 
+                                                                &lt;h1&gt;Welcome to my webpage&lt;/h1&gt; 
+                                                                &lt;p&gt;This is a simple webpage created using HTML.&lt;/p&gt; 
+                                                                &lt;/body&gt;
+                                                               &lt;/html&gt;
+                                                               <button type="button" class="btn btn-primary">Try it</button></pre></div></code>
+                                            <p> The &lt;html&gt; element is also used to specify the language of the document using the lang attribute. This helps search engines and assistive technologies to understand the language of the document which can improve accessibility and SEO.
+                                                &lt;html lang="en"&gt;
+                                                It's important to note that the &lt;html&gt; element is the only element that is required for a valid HTML document. All other elements are optional and can be added as needed to create the structure and layout of the document.
+                                                </p></div></p>
+                                                <div class="shortcode_title" >
+                                   
+                                                    <h4>The &lt;head&gt; Element with an example:</h4>
+                                                    <img src="data:image/jpeg;base64,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
+                                                    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"style="height:250px;width:350px;">
+                                                    <p >
+                                                      <br>    The &lt;head&gt; element is a container for all the head elements of an HTML document. It contains information about the document such as the title of the page, meta data, and links to external resources such as style sheets and scripts.
+                                                      <br>  The &lt;head&gt; element should be the first element inside the &lt;html&gt; element and should be followed by the &lt;body&gt; element.
+                                                       <br>  Here is an example of the &lt;head&gt; element in an HTML document:
+                                                        <div class="highlight">
+
+                                                                        
+                                                            <pre>
+                                                                        <code class="language-html" data-lang="html" id="stal">
+
+                                                                           &lt;!DOCTYPE html&gt;
+                                                                           &lt;html&gt;
+                                                                         &lt;head&gt;
+                                                                             &lt;title&gt;My Webpage&lt;/title&gt;
+                                                                           &lt;meta name="description" content="This is a simple webpage created using HTML"&gt;
+                                                                               &lt;meta name="keywords" content="HTML, Webpage"&gt; 
+                                                                             &lt;link rel="stylesheet" href="styles.css"&gt;
+                                                                            &lt;script src="script.js"&gt;&lt;/script&gt; 
+                                                                            &lt;/head&gt;
+                                                                              &lt;body&gt; 
+                                                                             &lt;h1&gt;Welcome to my webpage&lt;/h1&gt; 
+                                                                              &lt;p&gt;This is a simple webpage created using HTML.&lt;/p&gt;
+                                                                              &lt;/body&gt;
+                                                                             &lt;/html&gt;
+                                                                             <button type="button" class="btn btn-primary">Try it</button></pre></div></code>
+                                                        <p><br><br> In this example, the &lt;head&gt; element contains a &lt;title&gt; element, which sets the title of the webpage that is displayed in the browser's title bar or tab. It also contains two &lt;meta&gt; elements that provide metadata about the document, and two &lt;link&gt; and &lt;script&gt; elements that link to an external stylesheet and JavaScript file.
+                                                         <br><br> The &lt;title&gt; element is important because it tells the browser and search engines what the page is about. The &lt;meta&gt; elements provide metadata about the page, such as a description and keywords, which can help search engines to understand the content of the page. The &lt;link&gt; and &lt;script&gt; elements are used to link to external resources such as stylesheets and scripts.
+                                                         <br><br>  It's important to note that the contents of the &lt;head&gt; element are not displayed on the webpage, they are used by the browser and search engines to understand the structure and content of the document.
+                                                        </p></div></p> 
+        
+                                                        <div class="shortcode_title" >
+                                   
+                                                            <h4>       The &lt;title&gt; Element with an example:</h4>
+                                                            <p >
+                                                         
+                                                                
+                                                               The &lt;title&gt; element is used to specify the title of an HTML document. The title is displayed in the browser's title bar or tab, and is used by search engines to understand the content of the page.
+                                                                <br><br>The &lt;title&gt; element should be placed inside the &lt;head&gt; element and should be the first element inside it.
+                                                                <br><br> Here is an example of the &lt;title&gt; element in an HTML document:
+                                                                <div class="highlight">
+
+                                                                        
+                                                            <pre>
+                                                                        <code class="language-html" data-lang="html" id="stal">
+                                                                            &lt;!DOCTYPE html&gt; 
+                                                                            &lt;html&gt;
+                                                                            &lt;head&gt;
+                                                                             &lt;title&gt;My Webpage&lt;/title&gt;
+                                                                             &lt;/head&gt;
+                                                                             &lt;body&gt;
+                                                                             &lt;h1&gt;Welcome to my webpage&lt;/h1&gt;
+                                                                             &lt;p&gt;This is a simple webpage created using HTML.&lt;/p&gt;
+                                                                             &lt;/body&gt;
+                                                                             &lt;/html&gt;
+                                                                             <button type="button" class="btn btn-primary">Try it</button></code>
+                                                                    </pre>
+                                                                </div>
+                                                               
+                                                               
+                                                              
+                                                                <p><br> <br>In this example, the &lt;title&gt; element sets the title of the webpage to "My Webpage" and it will be displayed in the browser's title bar or tab and in the title of the webpage on the tab.
+                                                                <br> <br> The title of the webpage is important for SEO (Search Engine Optimization) and for users because it gives them an idea of what the webpage is about and it also helps them to identify the webpage when they have multiple tabs open.
+                                                                <br> <br>It's important to note that the &lt;title&gt; element should be unique and descriptive, and should not exceed 60 characters. If a title is too long, search engines may truncate it and users may not see the full title.
+                                                                </p>
+                                                                
+                                                                </p></div>
+                                                            <div class="shortcode_title" >
+                                   
+                                                                <h4>The &lt;script&gt; tag with an example:</h4>
+
+                                                                   <p> The &lt;script&gt; tag is used to include scripts (such as JavaScript) in an HTML document. A script is a program that can add interactivity and dynamic content to a webpage.
+                                                                   <br> <br>The &lt;script&gt; tag should be placed inside the &lt;body&gt; or &lt;head&gt; elements of the HTML document, and should be added after the elements that it will manipulate, because the JavaScript code inside the script tag will be executed after the entire document is loaded.
+                                                                   <br><br> Here is an example of the &lt;script&gt; tag in an HTML document:
+                                                                   
+                                                                   <div class="highlight">
+
+                                                                        
+                                                                    <pre>
+                                                                                <code class="language-html" data-lang="html"id=stal>
+                                                                    &lt;!DOCTYPE html&gt; 
+                                                                    &lt;html&gt;
+                                                                    &lt;head&gt;
+                                                                    &lt;title&gt;My Webpage&lt;/title&gt; 
+                                                                    &lt;/head&gt;
+                                                                    &lt;body&gt;
+                                                                    &lt;h1&gt;Welcome to my webpage&lt;/h1&gt; 
+                                                                    &lt;p id="paragraph"&gt;This is a simple webpage created using HTML.&lt;/p&gt;
+                                                                    &lt;script&gt; document.getElementById("paragraph").innerHTML = "This is a simple webpage created using HTML and JavaScript"; &lt;/script&gt; 
+                                                                    &lt;/body&gt; 
+                                                                    &lt;/html&gt;
+                                                                    <button type="button" class="btn btn-primary">Try it</button></code></pre></div>
+                                                                   <p> <br><br> In this example, the &lt;script&gt; tag is used to include a JavaScript code that changes the innerHTML of an element with the id "paragraph" and changes the text from "This is a simple webpage created using HTML" to "This is a simple webpage created using HTML and JavaScript".
+                                                                    <br><br>The &lt;script&gt; tag can also include the URL of an external script file instead of the script itself, like this:
+                                                                    <br><br> &lt;script src="script.js"&gt;&lt;/script&gt;
+                                                                    <br><br> It's important to note that the &lt;script&gt; tag can also include the type and async
+                                                                    </h4>
+                                                                <p ></p></div></p>
+                                                                <div class="shortcode_title" >
+                                   
+                                                                    <h4><br>The &lt;body&gt; Element with an example:</h4>
+                                                                    <p >
+
+                                                                        <br>The &lt;body&gt; element is a container for the main content of an HTML document. It contains the text, images, links, and other elements that are displayed on the webpage.
+                                                                        <br><br> The &lt;body&gt; element should be placed after the &lt;head&gt; element and inside the &lt;html&gt; element.
+                                                                        <br><br> Here is an example of the &lt;body&gt; element in an HTML document:
+                                                                        <div class="highlight">
+
+                                                                        
+                                                                            <pre>
+                                                                                        <code class="language-html" data-lang="html" id="stal">
+                                                                         &lt;!DOCTYPE html&gt; 
+                                                                         &lt;html&gt;
+                                                                         &lt;head&gt;
+                                                                         &lt;title&gt;My Webpage&lt;/title&gt;
+                                                                         &lt;/head&gt;
+                                                                         &lt;body&gt; 
+                                                                         &lt;h1&gt;Welcome to my webpage&lt;/h1&gt;
+                                                                         &lt;p&gt;This is a simple webpage created using HTML.&lt;/p&gt; 
+                                                                         &lt;img src="image.jpg" alt="An image"&gt;
+                                                                         &lt;a href="https://example.com"&gt;A link to another webpage&lt;/a&gt;
+                                                                         &lt;/body&gt;
+                                                                         &lt;/html&gt;
+                                                                         <button type="button" class="btn btn-primary">Try it</button>
+                                                                         </code></pre></div>
+                                                                        <p> <br>   <br>  In this example, the &lt;body&gt; element contains a heading, a paragraph, an image, and a link. These elements are displayed on the webpage when it is loaded in the browser.
+                                                                         <br>   <br>  The &lt;body&gt; element can also include any other HTML elements such as headings, paragraphs, lists, tables, etc. and can also include CSS and JavaScript to make the webpage more dynamic and interactive.
+                                                                         <br><br>  It's important to note that the &lt;body&gt; element is the main container of the webpage and it's where most of the content and interactivity of the webpage is located.
+                                                                        
+                                                                        </p>
+                                                                       <h4><br> Block-level and Inline Elements </h4>
+                                                                       <img src="data:image/png;base64,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"style="height:250px;width:300px;">
+                                                                        
+                                                                     <p> <br>  In HTML, elements can be classified into two main categories: block-level elements and inline elements.
+                                                                       <br><br>  Block-level elements take up the full width of their parent container, and create a new block formatting context. They create a visible "block" on the page and typically create a new line before and after the element. Examples of block-level elements include &lt;div&gt;, &lt;h1&gt;, &lt;p&gt;, &lt;ol&gt;, &lt;table&gt;, and &lt;form&gt;.
+                                                                       <br> &lt;div&gt; 
+                                                                       <div class="highlight">
+
+                                                                        
+                                                                        <pre>
+                                                                                    <code class="language-html" data-lang="html" id="stal">
+                                                                        &lt;h1&gt;This is a block-level element&lt;/h1&gt; 
+                                                                        &lt;p&gt;This is also a block-level element&lt;/p&gt;
+                                                                        &lt;/div&gt;
+                                                                        <button type="button" class="btn btn-primary">Try it</button></code></pre></div>
+                                                                      <p><br><br>   Inline elements only take up as much width as necessary and do not create a new block formatting context. They flow inline with the text, and typically do not create a new line before or after the element. Examples of inline elements include &lt;a&gt;, &lt;span&gt;, &lt;img&gt;, &lt;strong&gt;, and &lt;em&gt;.
+                                                                       <br><br>  &lt;p&gt;This is a &lt;span&gt;inline element&lt;/span&gt; inside a paragraph&lt;/p&gt;
+                                                                       <br><br>  It's important to note that some elements can be either block-level or inline depending on how they are used. For example, the &lt;div&gt; element is a block-level element by default, but it can be used as an inline element if it has the display: inline CSS property.
+                                                                       <br><br>  It's also important to note that the default display property of an element can be overriden by CSS, but it's important to use the correct element for the correct purpose to keep the HTML semantic and accessible.
+                                                                    </p> 
+                                                                    <h4><br> Nesting Elements: </h4>
+
+                                                                       <p>br> In HTML, elements can be nested inside other elements to create the structure and layout of a document. Nesting elements is the process of placing one element inside another element.
+                                                                       <br><br> Here is an example of nesting elements in an HTML document:
+                                                                    </p>
+                                                                    <div class="highlight">
+
+                                                                        
+                                                                        <pre>
+                                                                                    <code class="language-html" data-lang="html" id="stal">
+                                                                       &lt;!DOCTYPE html&gt; 
+                                                                        &lt;html&gt;
+                                                                        &lt;head&gt;
+                                                                        &lt;title&gt;My Webpage&lt;/title&gt; 
+                                                                        &lt;/head&gt; 
+                                                                        &lt;body&gt;
+                                                                        &lt;div&gt; 
+                                                                        &lt;h1&gt;Welcome to my webpage&lt;/h1&gt;
+                                                                        &lt;p&gt;This is a simple webpage created using HTML.&lt;/p&gt; 
+                                                                        &lt;div&gt;
+                                                                        &lt;h2&gt;About me&lt;/h2&gt;
+                                                                        &lt;p&gt;I am a web developer and I enjoy creating websites.&lt;/p&gt; 
+                                                                        &lt;/div&gt; 
+                                                                        &lt;/div&gt;
+                                                                        &lt;/body&gt;
+                                                                         &lt;/html&gt;
+                                                                         <button type="button" class="btn btn-primary">Try it</button>
+                                                                         </code></pre></div>
+                                                                      <p><br><br>In this example, the &lt;div&gt; element is nested inside another &lt;div&gt; element. The first &lt;div&gt; element contains a heading and a paragraph, while the second &lt;div&gt; element contains another heading and a paragraph. This creates a nested structure for the content of the webpage.
+                                                                       <br><br>It's important to note that elements can be nested inside other elements as many times as needed. This allows you to create complex structures and layouts for your webpage. However, it's important to keep the nesting well structured and well-organized to make the HTML code easy to read and maintain.
+                                                                       <br><br>  Also, it's important to use the correct element for the correct purpose to keep the HTML semantic and accessible.
+                                                                    </p> 
+                                                                       <h4><br>Understanding the DOM Tree:</h4>
+
+<p><br>The Document Object Model (DOM) represents an HTML or XML document as a tree of objects, where each object represents a part of the document, such as an element, an attribute, or a text node. This tree-like structure is called the Document Tree.
+<br><br>Each object in the Document Tree is called a node. The topmost node in the tree is the Document object, which represents the entire document. The Document object has child nodes, which are the elements in the document. Each element node can have further child nodes, which can be other elements, text nodes, or attribute nodes.
+<br><br>For example, consider the following HTML document:</p> 
+<div class="highlight">
+
+                                                                        
+    <pre>
+                <code class="language-html" data-lang="html" id="stal">
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+&lt;head&gt; 
+&lt;title&gt;My Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="myDiv"&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt; 
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt; 
+&lt;/div&gt;
+&lt;/body&gt; 
+&lt;/html&gt;
+
+The Document Tree for this document would look something like this:
+
+Document | 
++-- html
+| | | +-- head
+| | | | | +-- title 
+ | | | +-- body
+| | | +-- div#myDiv
+ | | | +-- p
+| | | +-- p 
+| | | +-- ul
+ | | | +-- li
+ | | | +-- li
+<button type="button" class="btn btn-primary">Try it</button>
+</code></pre></div>
+
+
+<h4><br>Accessing DOM Elements with an example</h4>
+<p><br> Once the Document Object Model (DOM) is created, you can use JavaScript or other programming languages to access and manipulate the content and structure of the document. There are several ways to access DOM elements, but some of the most common methods are:
+<br> document.getElementById(id): This method returns the element with the specified id. For example:
+
+</p>
+
+
+
+<div class="highlight">
+
+                                                                        
+    <pre>
+                <code class="language-html" data-lang="html" id="red">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;p id="myParagraph"&gt;This is a paragraph.&lt;/p&gt;
+&lt;script&gt; var myParagraph = document.getElementById("myParagraph"); console.log(myParagraph); //       &lt;/script&gt;
+&lt;p id="myParagraph"&gt;This is a paragraph.
+&lt;/p&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;
+document.getElementsByTagName(tagName): This method returns a collection of elements with the specified tag name. For example:
+
+<button type="button" class="btn btn-primary">Try it</button></code></pre></div><br><br>
+<div class="highlight">
+
+                                                                        
+    <pre>
+                <code class="language-html" data-lang="html" id="red">
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+&lt;body&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt; 
+&lt;script&gt; var paragraphs = document.getElementsByTagName("p"); 
+console.log(paragraphs); // 
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;]
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+document.querySelector(selector): This method returns the first element that matches the specified CSS selector. For example:
+
+<button type="button" class="btn btn-primary">Try it</button></code></pre></div><br><br>
+<pre><code class="language-html" data-lang="html" id="red">
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt; 
+  &lt;p class="my-paragraph"&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p class="my-paragraph"&gt;This is another paragraph.&lt;/p&gt; 
+  &lt;script&gt; var myParagraph = document.querySelector(".my-paragraph"); 
+  console.log(myParagraph); 
+ // &lt;p class="my-paragraph"&gt;This is a paragraph.&lt;/p&gt; 
+ &lt;/script&gt;
+&lt;/body&gt;
+ &lt;/html&gt;
+ document.querySelectorAll(selector): This method returns a collection of elements that match the specified CSS selector. For example:
+ 
+ <button type="button" class="btn btn-primary">Try it</button>
+</code></pre></div><br><br>
+ <pre><code class="language-html" data-lang="html" id="red">
+&lt;!DOCTYPE html&gt; 
+ &lt;html&gt;
+ &lt;body&gt; 
+ &lt;p class="my-paragraph"&gt;This is a paragraph.&lt;/p&gt; 
+ &lt;p class="my-paragraph"&gt;This is another paragraph.&lt;/p&gt; 
+ &lt;script&gt; var myParagraphs = document.querySelectorAll(".my-paragraph"); console.log(myParagraphs)
+ &lt;/script&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;
+
+
+ <button type="button" class="btn btn-primary">Try it</button>
+</code></pre></div><br><br>
+
+<h4><br> Understanding HTML Elements:</h4>
+
+<p><br> <br> HTML elements are the building blocks of an HTML document. They are used to structure the content and layout of a webpage. Each element is represented by a start tag, content, and an end tag.
+<br> <br> For example, the following is an HTML element for a paragraph:
+<br> <br> &lt;p&gt;This is a paragraph.&lt;/p&gt;
+<br> <br> In this example, &lt;p&gt; is the start tag, This is a paragraph. is the content, and &lt;/p&gt; is the end tag.
+<br> <br> HTML elements have different properties and attributes that can be used to define their behavior and appearance. For example, the &lt;p&gt; element can have a class attribute to define its CSS class, and a style attribute to define its inline CSS styles.
+<br> <br> Here is an example of an HTML element with attributes:
+<pre><code class="language-html" data-lang="html" id="stal">
+ &lt;p class="my-paragraph" style="color: blue;"&gt;This is a paragraph.&lt;/p&gt;
+    
+<button type="button" class="btn btn-primary">Try it</button>
+</code></pre>
+<br> <p> In this example, the &lt;p&gt; element has the class attribute set to "my-paragraph" and the style attribute set to "color: blue;".
+<br> <br> HTML elements also have different semantic meaning, which help to convey the meaning of the content to search engines and assistive technologies. For example, the &lt;h1&gt; element is used for headings, the &lt;p&gt; element is used for paragraphs, and the &lt;a&gt; element is used for links.
+<br> <br> It's important to note that HTML elements can be nested inside other elements to create the structure and layout of a document. It's also important to use the correct element for the correct purpose to keep the HTML semantic and accessible.
+</p>
+
+<h4><br> Block-level Elements:</h4>
+
+<p><br> Block-level elements in HTML are elements that take up the full width of their parent container, and create a new block formatting context. They create a visible "block" on the page and typically create a new line before and after the element. Examples of block-level elements include &lt;div&gt;, &lt;h1&gt;, &lt;p&gt;, &lt;ol&gt;, &lt;table&gt;, and &lt;form&gt;.
+<br><br> Here is an example of block-level elements in an HTML document:
+<br><br> &lt;div&gt; &lt;h1&gt;This is a block-level element&lt;/h1&gt; &lt;p&gt;This is also a block-level element&lt;/p&gt; &lt;/div&gt;
+<br><br> In this example, the &lt;div&gt; and &lt;p&gt; elements are block-level elements. They take up the full width of their parent container, and create a new line before and after the element. The &lt;h1&gt; element is also a block-level element, it creates a new line before and after the element.
+<br><br> It's important to note that some elements can be either block-level or inline depending on how they are used. For example, the &lt;div&gt; element is a block-level element by default, but it can be used as an inline element if it has the display: inline CSS property.
+<br><br> It's also important to use the correct element for the correct purpose to keep the HTML semantic and accessible.
+<br><br> Block-level elements can contain both block and inline elements. They are typically used to create the structure of a webpage and divide it into sections.
+</p>
+
+<h4><br> Inline Elements:</h4>
+
+<p><br> Inline elements in HTML are elements that only take up as much width as necessary and do not create a new block formatting context. They flow inline with the text, and typically do not create a new line before or after the element. Examples of inline elements include &lt;a&gt;, &lt;span&gt;, &lt;img&gt;, &lt;strong&gt;, and &lt;em&gt;.
+<br> <br> Here is an example of inline elements in an HTML document:
+
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;p&gt;This is a &lt;span&gt;inline element&lt;/span&gt; inside a paragraph&lt;/p&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br> <p> In this example, the &lt;span&gt; element is an inline element. It does not create a new line before or after the element and it flows inline with the text.
+<br> <br> It's important to note that some elements can be either block-level or inline depending on how they are used. For example, the &lt;div&gt; element is a block-level element by default, but it can be used as an inline element if it has the display: inline CSS property.
+<br> <br> It's also important to use the correct element for the correct purpose to keep the HTML semantic and accessible.
+<br> <br> Inline elements can be used to style text or add small elements to a webpage, they can't contain other block-level elements, only other inline elements and text.
+<br> <br> Inline elements are used to add small elements or to style text such as text color, font-size, background color, etc. It is important to use the correct element for the correct purpose to keep the HTML semantic and accessible.
+
+</p>
+<h4><br> Understanding HTML Attributes:</h4>
+
+<p><br> HTML attributes provide additional information about an HTML element and define its properties and behaviour. They are used to define the characteristics of an element, such as its size, color, and other visual properties, as well as its behaviour, such as linking to another webpage or triggering a script.
+<br> <br> Attributes are added to the opening tag of an HTML element, and are composed of a name and a value. The name of the attribute specifies the type of information, and the value of the attribute specifies the actual information.
+<br> <br> For example, the src attribute is used to specify the source URL of an image element, and the href attribute is used to specify the link destination of an anchor element.
+
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;img src="image.jpg" alt="image"&gt; &lt;a href="https://example.com"&gt;&lt;/code>This is a link&lt;/a&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br> <p> In this example the src attribute's value is "image.jpg" and the alt attribute's value is "image". Similarly, the href attribute's value is "https://example.com"
+<br> <br> Some attributes are standard and can be used with most elements, such as the class and style attributes. Other attributes are specific to certain elements, such as the src attribute for the &lt;img&gt; element or the href attribute for the &lt;a&gt; element.
+<br> <br> It's important to note that some attributes are required for certain elements, while others are optional. Also, some attributes have specific values, while others can take any value.
+<br> <br> It's also important to use the correct attributes for the correct purpose to keep the HTML semantic and accessible.
+
+</p>
+<h4><br> Explain about the Global Attributes with an example:</h4>
+<img src="https://s3.ap-south-1.amazonaws.com/s3.studytonight.com/tutorials/uploads/pictures/1589352735-1.png"style="height:250px;width:550px;">
+
+<p><br> Global attributes in HTML are attributes that can be used with most elements. They provide additional information about an HTML element and define its properties and behavior. Examples of global attributes include id, class, style, title, and accesskey.
+<br> <br> Here is an example of global attributes in an HTML document:
+<pre>
+<code class="language-html" data-lang="html" id="stal">
+ &lt;p id="myParagraph" class="my-paragraph" style="color: blue;"title="This is a tooltip"&gt;&lt;/code> This is a paragraph.&lt;/p&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br> <p> In this example, the id attribute is used to specify a unique id for the element, the class attribute is used to specify a CSS class for the element, the style attribute is used to specify inline CSS styles for the element, and the title attribute is used to specify a tooltip for the element.
+<br> <br> id attribute: The id attribute is used to specify a unique id for an element. It can be used to style the element with CSS and to access the element with JavaScript.
+<br> <br> class attribute: The class attribute is used to specify one or more CSS classes for an element. It can be used to apply styles to multiple elements with the same class name.
+<br> <br> style attribute: The style attribute is used to specify inline CSS styles for an element. It can be used to apply styles directly to an element, rather than using CSS classes.
+<br> <br> title attribute: The title attribute is used to specify a tooltip for an element. It can be used to provide additional information about an element when the user hovers over it.
+<br> <br> It's important to note that some global attributes have specific values, while others can take any value. It's also important to use the correct attributes for the correct purpose to keep the HTML semantic and accessible.
+</p>
+
+
+<h4><br> Element-specific Attributes with an example</h4>
+<p><br> Element-specific attributes in HTML are attributes that are specific to certain elements and provide additional information about those elements. These attributes define the properties and behaviour of the elements and are used to specify the characteristics of the elements.
+<br> <br> Here is an example of element-specific attributes in an HTML document:
+
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;a href="https://example.com" target="_blank" rel="noopener"&lt;/code>&gt;This is a link&lt;/a&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br> <p> In this example, the &lt;a&gt; element is used to create a link, the href attribute is used to specify the link destination, the target attribute is used to specify where to open the link and the rel attribute is used to specify the relationship of the link to the current page.
+<br> <br> href attribute: The href attribute is used to specify the link destination for the &lt;a&gt; element. It is used to specify the URL of the webpage or resource to link to.
+<br> <br> target attribute: The target attribute is used to specify where to open the link for the &lt;a&gt; element. It can take values like "_blank" that opens the link in a new tab, "_self" that opens the link in the same tab, "_parent" that opens the link in the parent frame and "_top" that opens the link in the full body of the window.
+<br> <br> rel attribute: The rel attribute is used to specify the relationship of the link to the current page for the &lt;a&gt; element. It can take values like "noopener" and "noreferrer" that specifies that the link should not be able to access the current page.
+<br> <br> It's important to note that some element-specific attributes are required for certain elements, while others are optional. Also, some attributes have specific values, while others can take any value.
+<br> <br> It's also important to use the correct element-specific attributes for the correct purpose to keep the HTML semantic and accessible.
+</p>
+
+<h4><br>The class and id Attributes with an example</h4>
+
+<p><br> The class and id attributes in HTML are used to specify the class and id of an element respectively. They are commonly used in conjunction with CSS and JavaScript to apply styles and behavior to elements.
+<br><br>The class attribute is used to specify one or more CSS classes for an element, and the id attribute is used to specify a unique id for an element.
+<br><br>Here is an example of the class and id attributes in an HTML document:
+
+<pre>
+<code class="language-html" data-lang="html" id="stal">
+&lt;p class="my-paragraph" id="myParagraph"&gt;&lt;/code>This is a paragraph.&lt;/p&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br><p>In this example, the class attribute is set to "my-paragraph" and the id attribute is set to "myParagraph".
+<br><br>With the class attribute, you can apply styles to multiple elements with the same class name in the CSS file.</p>
+<pre><code class="language-css" data-lang="css" id="red">
+.my-paragraph { color: blue; }
+And with the id attribute, you can apply styles to a specific element with a specific id in the CSS file.
+#myParagraph { font-size: 20px; }
+The id attribute can also be used to access the element with JavaScript.
+var myParagraph = document.getElementById("myParagraph"); console.log(myParagraph); 
+// &lt;p id="myParagraph"&gt;This is a paragraph.&lt;/p&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br><p>It's important to note that the id attribute should be unique throughout the entire HTML document, while the class attribute can be used multiple times on the same or different elements.
+
+</p>
+<h4><br>The title Attribute with an example</h4>
+
+<p><br>The title attribute in HTML is used to specify a tooltip for an element. It provides additional information about an element when the user hovers over it. The text specified in the title attribute will be displayed as a tooltip.
+<br><br>Here is an example of the title attribute in an HTML document:
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;p title="This is a tooltip"&gt;This is a paragraph.&lt;/p&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br><p>In this example, the title attribute is set to "This is a tooltip" and when the user hovers over the paragraph, the text "This is a tooltip" will be displayed as a tooltip.
+<br><br>The title attribute can be used with most elements, but it is commonly used with elements such as links, images, and buttons to provide additional information.
+</p>
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;a href="https://example.com" title="Go to example website"&gt;example&lt;/a&gt;
+
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br><p>In this example, when the user hovers over the link, the text "Go to example website" will be displayed as a tooltip.
+<br><br>It's important to note that the text provided in the title attribute should be short and descriptive, as it can be truncated if it's too long. Also, it is not recommended to use the title attribute as the primary source of information, as it is not accessible to all users, and it's better to use other techniques such as aria-label and aria-describedby attributes.
+                                                                     </p>
+<h4><br>The data-* Attributes with an example</h4>
+
+<p><br>The data-* attributes in HTML are used to store custom data private to the page or application. They allow developers to add their own custom attributes to HTML elements, without having to worry about any conflicts with existing attributes or future updates to the HTML specification.
+<br><br>The data-* attributes are used by JavaScript to access the data stored in the attributes, and can be used to store any type of data such as strings, numbers, booleans, or even JSON objects.
+<br><br>Here is an example of the data-* attribute in an HTML document:
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;p data-my-data="some value"&gt;This is a paragraph.&lt;/p&gt;
+
+In this example, the data-my-data attribute is set to "some value".
+&lt;button class="my-button" data-product-id="123" data-product-name="Example Product"&gt;Add to cart&lt;/button&gt;
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+<br><p>In this example, the button element has two data-* attributes data-product-id and data-product-name which contain the id and name of the product.
+<br><br>These attributes can be accessed and manipulated via JavaScript by using the dataset property of the element, or getAttribute method.
+</p>
+<pre><code class="language-javascript" data-lang="javascript" id="red">
+var myButton = document.querySelector(".my-button");
+console.log(myButton.dataset.productId); // "123" 
+console.log(myButton.dataset.productName); // "Example Product"
+
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+
+<br><p>It's important to note that the data-* attributes are not intended to be used to define the presentation of a document, but to define the behavior and behavior of elements in the document in a way that is independent of the presentation. Also, the attribute name must begin with the prefix data-.
+</p>
+
+<h4><br>The hidden Attribute with an examples:</h4>
+
+<p><br>The hidden attribute in HTML is a boolean attribute that is used to hide an element from view. When the hidden attribute is present on an element, it will not be displayed on the page and will not take up any space.
+<br><br>Here is an example of the hidden attribute in an HTML document:
+<br><br>&lt;p hidden&gt;This is a hidden paragraph.&lt;/p&gt;
+<br><br>In this example, the hidden attribute is present on the &lt;p&gt; element, which will not be displayed on the page.
+<br>Another example:
+
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;button onclick="toggleVisibility()"&gt;Toggle&lt;/button&gt;
+&lt;p id="myParagraph" hidden&gt;&lt;/code>This is a hidden paragraph.&lt;/p&gt;
+function toggleVisibility() 
+{ 
+var myParagraph = document.getElementById("myParagraph"); 
+myParagraph.hidden = !myParagraph.hidden; 
+}
+<button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+    <br><p>In this example, the hidden attribute is present on the &lt;p&gt; element, and it is being toggled by a button's onclick event. This way the hidden attribute can be used to hide and show an element on the fly.
+    <br><br>It's important to note that the hidden attribute is not a replacement for using CSS to hide elements. It is intended to be used to hide elements that are not relevant or not ready to be displayed on the page. Also, it is not intended to be used to hide elements from screen readers, for this purpose use the aria-hidden attribute
+    </p>
+    <h5>The style Attribute with an example</h5>
+   <p>The "style" attribute is used in HTML to apply inline CSS styles to specific elements. The attribute takes a string value that contains a set of CSS properties and their values, separated by semicolons.
+    <br><br>For example, to change the background color of a paragraph to red and the font color to white, you would use the following code:</p>
+    <pre><code class="language-html" data-lang="html" id="stal">
+        &lt;p style="background-color: red; color: white;"&gt;This is a red paragraph with white text.&lt;/p&gt;
+    
+        <button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+    <br><p>It is worth mentioning that the best practice is to separate the presentation from the structure, so it is recommended to use CSS in a separate file, using classes and ids for styling, this way we can change the design of our website easily and quickly.
+    <br><h5>The spellcheck Attribute with an example</h5>
+    <p>The "spellcheck" attribute is used in HTML to specify whether the element should have its spelling and grammar checked or not. This attribute can be applied to input and textarea elements.
+    <br><br>The attribute accepts a boolean value, which means it can be set to "true" or "false". If the attribute is set to "true", the element will have its spelling and grammar checked. If it is set to "false", the element will not be checked. By default, the value is "true" if the attribute is not specified.
+    <br><br>For example, to disable spellcheck for a textarea element, you would use the following code:</p>
+    <pre><code class="language-html" data-lang="html" id="stal">
+        &lt;textarea spellcheck="false"&gt;&lt;/textarea&gt;
+
+        <button type="button" class="btn btn-primary">Try it</button>
+    </code></pre>
+    <br><p>It is worth mentioning that spellchecker is not 100% accurate and it may not catch all errors, it is important to proofread the text before submitting it.
+</p><h4><br>The accesskey Attribute with an example</h4>
+<p><br>The "accesskey" attribute is used in HTML to assign a keyboard shortcut to an element. This attribute allows users to activate an element using a keyboard shortcut, instead of using a mouse or other pointing device. The attribute can be applied to most elements, including links, buttons, and form fields.
+<br><br>The attribute takes a single character as its value. This character represents the key that will be used as the shortcut. For example, to assign the "Alt + S" shortcut to a button element, you would use the following code:
+<pre><code class="language-html" data-lang="html" id="stal">
+    &lt;button accesskey="s"&gt;Save&lt;/button&gt;
+
+    <button type="button" class="btn btn-primary" >Try it</button>
+</code></pre>
+<br><p>It is worth mentioning that accesskey is not recommended to use because it may cause accessibility issues, it can also make the website not usable for users who have certain keyboard layouts or who use certain types of assistive technology.
+</p>
+<h4><br>The tabindex Attribute with an example</h4>
+<p><br>The "tabindex" attribute is used in HTML to specify the tab order of an element. This attribute allows developers to control the order in which elements are focused when the user presses the tab key. The attribute can be applied to most elements, including links, buttons, and form fields.
+<br><br>The attribute takes a numerical value as its parameter, which represents the order in which the element will be focused. For example, to make an element the first in the tab order, you would use the following code:
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;button tabindex="1"&gt;Save&lt;/button&gt;
+
+<button type="button" class="btn btn-primary" >Try it</button>
+</code></pre>
+<br><p>Elements with a higher tabindex value will be focused before elements with a lower value. The default tab order is the order in which the elements appear in the HTML source code.
+<br><br>It is worth mentioning that tabindex can cause accessibility issues, and it's recommended to use it with caution.
+</p><h4>The draggable Attribute with an example</h4>
+<p><br>The "draggable" attribute is used in HTML to specify whether an element can be dragged or not. This attribute allows developers to create elements that can be moved around the screen by the user, using a pointing device such as a mouse. The attribute can be applied to most elements, including images, links, and divs.
+<br><br>The attribute takes a boolean value, which means it can be set to "true" or "false". If the attribute is set to "true", the element is draggable. If it is set to "false" or not set at all, the element is not draggable.
+<br><br>For example, to make an image draggable, you would use the following code:
+<pre><code class="language-html" data-lang="html" id="stal">
+&lt;img src="image.jpg" draggable="true"&gt;
+
+<button type="button" class="btn btn-primary" >Try it</button>
+</code></pre>
+<br><p>It is worth mentioning that when an element is made draggable, it will also fire a set of events allowing developers to track the draggable elements and perform actions accordingly, like data transfer and validation.
+</p>
+
+
+                                                                       
+                                                                        </p></div>
+                                                                   
+                   <div style="margin-left: 300px;">                     
+                    <footer class="forum_footer_area">
+                        <div class="container"id="day">
+                            <div class="forum_footer_inner">
+                                <div class="row">
+                                  <div class="col-lg-3 col-sm-5">
+                                        <aside class="f_widget f_link_wd">
+                                            <ul class="navbar-nav" id="car">
+                              
+                                          <li>
+                                            <a href="#" class="text-white">About</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="text-white">Privacy and policy</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="text-white">careers</a>
+                                          </li></aside>
+                                        </ul>
+                                      </div>
+                                      <!--Grid column-->
+                              
+                                      <!--Grid column-->
+                                      <div class="col-lg-3 col-sm-6">
+                                        <aside class="f_widget f_link_wd">
+                                            <ul class="navbar-nav" id="car">
+                              
+                                          <li>
+                                            <a href="#" class="text-white">Ad Choices</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="text-white">Create ad</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="text-white">Create page</a>
+                                          </li>
+                                        
+                                        </ul></aside>
+                                      </div>
+                                      <!--Grid column-->
+                              
+                                      <!--Grid column-->
+                                      <div class="col-lg-3 col-sm-6">
+                                        <aside class="f_widget f_link_wd" >
+                                            <ul class="navbar-nav" id="car">
+                              
+                                      
+                                          <li>
+                                            <a href="#" class="text-white">Terms and Conditions</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="text-white">Cookies</a>
+                                          </li>
+                                       </ul></aside>
+                                      </div>
+                                      <div class="col-lg-3 col-sm-8" id="car">
+                                        <h6 style="color:white;">Contact</h6>
+                                        <ul class="navbar-nav" id="phone" ></ul>
+                                        <li><i class="fas fa-home me-3" style="font-weight: lighter;"></i> 6th Floor,
+                                             Omega-C Block Divyasree Building,
+                                        </li>
+                                          <li><i class="fas fa-envelope me-3"style="font-weight: lighter;"></i>
+                                            Hitech city Rd
+                                            
+                                            Kondapur, </li>
+                                        
+                                        <li><i class="fas fa-phone me-3"style="font-weight: lighter;"></i> Telangana 500081</li>
+                                        <li><i class="fas fa-print me-3"></i> + 01 234 567 89</li>
+                                                
+                                        </div>
+                                      <!--Grid column-->
+                                     
+                                      <DIV style="margin-top:25px;">
+                                        <p style="margin-left:10px ;font-size: 18px;font-weight: 5;color: white;margin-top: 15px;"> Get connected with us on social networks:
+                                       <span style="margin-left:250px;"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                          </svg>&nbsp;&nbsp;&nbsp;
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                          </svg>&nbsp;&nbsp;&nbsp;
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                          </svg>&nbsp;&nbsp;&nbsp;
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                          </svg>
+                                          
+                                          </span>
+                                      </DIV>
+                                      
+                              
+                                    
+            
+                <!-- How can we help? Form Modal -->
+                <div class="modal fade img_modal" id="exampleModal3" tabindex="-3" role="dialog" aria-hidden="false">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class=" icon_close"></i>
+                    </button>
+                    <div class="modal-dialog help_form" role="document">
+                        <div class="modal-content">
+                            <div class="shortcode_title" id="den">
+                                <h2>How can we help?</h2>
+                                <p>A premium WordPress theme with integrated Knowledge Base,<br>providing 24/7 community based support.</p>
+                            </div>
+                            <form action="#" class="contact_form">
+                                <div class="row" id="den">
+                                    <div class="form-group col-lg-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <textarea name="Message" id="massage" placeholder="Massage"></textarea>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <button type="submit" class="btn action_btn" id="den">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- Footer -->
+                <!-- Back to top button -->
+                <a id="back-to-top" title="Back to Top"></a>
+            
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="js/jquery-3.5.1.min.js"></script>
+                <script src="assets/bootstrap/js/popper.min.js"></script>
+                <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+                <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
+                <script src="js/pre-loader.js"></script>
+                <script src="js/jquery.parallax-scroll.js"></script>
+                <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
+                <script src="assets/wow/wow.min.js"></script>
+                <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+                <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.min.js"></script>
+                <script src="js/anchor.js"></script>
+                <script src="assets/magnify-pop/jquery.magnific-popup.min.js"></script>
+                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                <script src="js/main.js"></script>
+                <script src="assets/prism/prism.js"></script>
+            
+            </body>
+            
+            </html>
